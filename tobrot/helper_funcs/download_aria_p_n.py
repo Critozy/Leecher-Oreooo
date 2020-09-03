@@ -12,6 +12,8 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 LOGGER = logging.getLogger(__name__)
 
 import aria2p
+import sys
+sys.setrecursionlimit(10**6)
 import asyncio
 import os
 from tobrot.helper_funcs.upload_to_tg import upload_to_tg, upload_to_gdrive
